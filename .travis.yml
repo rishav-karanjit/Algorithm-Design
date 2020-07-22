@@ -1,7 +1,7 @@
 language: c
 
 script:
-  - gcc warshall's\ algorithm.c 
-  - gcc floyd's\ algorithm.c
-  - gcc dijkstra's\ algorithm.c
-  - gcc Kruskal's\ algorithm.c 
+  - gcc warshall\'s\ algorithm.c 
+  - gcc floyd\'s\ algorithm.c
+  - gcc dijkstra\'s\ algorithm.c
+  - gcc Kruskal\'s\ algorithm.c 
