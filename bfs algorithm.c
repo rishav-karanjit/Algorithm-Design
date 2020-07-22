@@ -12,7 +12,7 @@ void bfs(int v) {
     }
 }
 
-void main() {
+int main() {
     int v;
     printf("\n Enter the number of vertices:");
     scanf("%d", &n);
