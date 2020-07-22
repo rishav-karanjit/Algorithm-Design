@@ -3,4 +3,3 @@ language: c
 compiler:
   - gcc
 
-script: gcc Horspool algorithm.c Kruskal's algorithm.c
