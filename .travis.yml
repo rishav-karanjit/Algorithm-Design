@@ -1,8 +1,5 @@
 language: c
 
-compiler: gcc
-
 script:
-  - clang -coverage -O0 Horspool\ algorithm.c Kruskal's\ algorithm.c Prims\ algorithm.c Subset\ problem.c Topological\ Sorting.c bfs\ algorithm.c binomial\ coefficient.c 
-  - clang -coverage -O0 dfg\ algorithm.c dijkstra's\ algorithm.c floyd's\ algorithm.c knapsack\ problem.c nqueens\ problem.c warshall's\ algorithm.c
+  - clang *.c
   
