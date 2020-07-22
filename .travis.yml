@@ -4,4 +4,13 @@ script:
   - gcc warshall\'s\ algorithm.c 
   - gcc floyd\'s\ algorithm.c
   - gcc dijkstra\'s\ algorithm.c
-  - gcc Kruskal\'s\ algorithm.c 
+  - gcc Kruskal\'s\ algorithm.c
+  - gcc Horspool\ algorithm.c 
+  - gcc Prims\ algorithm.c 
+  - gcc Subset\ problem.c 
+  - gcc Topological\ Sorting.c 
+  - gcc bfs\ algorithm.c 
+  - gcc binomial\ coefficient.c
+  - gcc dfg\ algorithm.c
+  - gcc knapsack\ problem.c
+  - gcc nqueens\ problem.c
