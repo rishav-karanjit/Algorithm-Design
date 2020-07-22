@@ -2,8 +2,27 @@
 #include<stdlib.h>
 
 int inc[50],w[50],sum,n;
+
 int promising(int i,int wt,int total) {
 	return(((wt+total)>=sum)&&((wt==sum)||(wt+w[i+1]<=sum)));
+}
+
+void sumset(int i,int wt,int total) {
+	int j;
+	if(promising(i,wt,total)) {
+		if(wt==sum) {
+			printf("\n{\t");
+			for (j=0;j<=i;j++)
+			    if(inc[j])
+                    printf("%d\t",w[j]);
+			printf("}\n");
+		} else {
+			inc[i+1]=1;
+			sumset(i+1,wt+w[i+1],total-w[i+1]);
+			inc[i+1]=0;
+			sumset(i+1,wt,total-w[i+1]);
+		}
+	}
 }
 
 void main() {
@@ -39,21 +58,4 @@ void main() {
 		printf("\n The solution using backtracking is:\n");
 		sumset(-1,0,total);
     }
-}
-void sumset(int i,int wt,int total) {
-	int j;
-	if(promising(i,wt,total)) {
-		if(wt==sum) {
-			printf("\n{\t");
-			for (j=0;j<=i;j++)
-			    if(inc[j])
-                    printf("%d\t",w[j]);
-			printf("}\n");
-		} else {
-			inc[i+1]=1;
-			sumset(i+1,wt+w[i+1],total-w[i+1]);
-			inc[i+1]=0;
-			sumset(i+1,wt,total-w[i+1]);
-		}
-	}
 }
