@@ -14,3 +14,6 @@ script:
   - gcc dfg\ algorithm.c
   - gcc knapsack\ problem.c
   - gcc nqueens\ problem.c
+
+after_success:
+bash <(curl -s https://codecov.io/bash)
