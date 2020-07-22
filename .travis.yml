@@ -1,5 +1,5 @@
 language: c
 
 script:
-  - clang *.c
+  - clang -coverage -O0 *.c
   
