@@ -1,1 +1,5 @@
 language: c
+
+script:
+  - clang -coverage -O0 Horspool algorithm.c -o hello
+  - ./hello
