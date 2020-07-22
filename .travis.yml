@@ -1,5 +1,5 @@
 language: c
 
 script:
-  - gcc Horspool\ algorithm.c
+  - gcc Horspool\ algorithm.c Kruskal's\ algorithm.c Prims\ algorithm.c Subset\ problem.c Topological\ Sorting.c bfs\ algorithm.c binomial\ coefficient.c
   
